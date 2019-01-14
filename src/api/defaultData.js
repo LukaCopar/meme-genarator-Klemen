@@ -1,7 +1,7 @@
 export default {
   user: {
     id: 1,
-    username: 'skankhunt42',
+    username: 'beastmater64',
   },
   memes: [
     {
@@ -21,7 +21,7 @@ export default {
       text: 'Mind blown',
       color: 'white',
       fontSize: '30px',
-      author: 'skankhunt42',
+      author: 'beastmater64',
       authorId: 1,
       upvotes: 0,
       createdAt: '2018/12/13',
