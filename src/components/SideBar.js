@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 export default class SideBar extends Component {
+
+
     render() {
+        console.log(window.location.href);
         return (
             <div className="leftSidebar">
                 <div className="leftSidebar-item-wrapper">
@@ -17,6 +20,7 @@ export default class SideBar extends Component {
                         </Link>
                     </span>
                     <span>
+
                         <Link to="/edit">
                             <img src="img/mm-create-off.svg" alt="Create" />
                         </Link>

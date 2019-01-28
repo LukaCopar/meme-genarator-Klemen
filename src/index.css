@@ -17,6 +17,10 @@ code {
   text-align: center;
 }
 
+.slikica{
+  background-color: black;
+}
+
 /* TODO: copied from example */
 
 .leftSidebar {
