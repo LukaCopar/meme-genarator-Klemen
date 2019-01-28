@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import Meme from './Meme';
+
 class Details extends Component {
     constructor(props) {
         super(props);
-        console.log("lmao");
-
         const { memes } = this.props;
         const [meme] = memes.filter(meme => meme.id === parseInt(this.props.match.params.id, 10));
 
+
+
+        console.log(meme);
     }
     render() {
-        console.log(this.state);
         return (
             <div>
-                ayyy lmao xD!
+
+                <Meme key={meme.id} meme={meme} />
             </div>
         )
     }

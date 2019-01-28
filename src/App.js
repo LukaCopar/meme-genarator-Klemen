@@ -28,7 +28,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={() => <Main {...this.state} />} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/details:id" render={() => <Details {...this.state} />} />
+            <Route exact path="/details/:id" render={() => <Details {...this.state} />} />
             <Route exact path="/edit" render={() => <Edit {...this.state} />} />
             <Route component={Error} />
           </Switch>
