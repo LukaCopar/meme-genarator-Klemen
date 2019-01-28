@@ -8,6 +8,7 @@ import Login from './components/Login'
 import Details from './components/Details'
 import Error from './components/Error'
 import Data from './api/defaultData'
+import Edit from './components/Edit';
 
 
 
@@ -27,7 +28,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={() => <Main {...this.state} />} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/Details:id" render={() => <Details {...this.state} />} />
+            <Route exact path="/details:id" render={() => <Details {...this.state} />} />
+            <Route exact path="/edit" render={() => <Edit {...this.state} />} />
             <Route component={Error} />
           </Switch>
           <Footer />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 export default class SideBar extends Component {
     render() {
@@ -6,13 +7,19 @@ export default class SideBar extends Component {
             <div className="leftSidebar">
                 <div className="leftSidebar-item-wrapper">
                     <span>
-                        <img src="img/mm-home-on.svg" alt="Home" />
+                        <Link to="/">
+                            <img src="img/mm-home-on.svg" alt="Home" />
+                        </Link>
                     </span>
                     <span>
-                        <img src="img/mm-section-off.svg" alt="Section" />
+                        <Link to="/login">
+                            <img src="img/mm-section-off.svg" alt="Section" />
+                        </Link>
                     </span>
                     <span>
-                        <img src="img/mm-create-off.svg" alt="Create" />
+                        <Link to="/edit">
+                            <img src="img/mm-create-off.svg" alt="Create" />
+                        </Link>
                     </span>
                 </div>
             </div>
